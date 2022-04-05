@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+h1 {
+    display: none;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#sedan-container {
+    background-color: var(--Bright-orange);
+}
+
+#suv-container {
+    background-color: var(--Dark-cyan);
+}
+
+#luxury-container {
+    background-color: var(--Very-dark-cyan);
+}
+
+img {
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    padding: 2.5rem;
+    min-width: 4rem;
+}
+
+
+/*Buttons */
+
+button {
+    border-radius: 1rem;
+    padding: .5rem 1.5rem;
+    border: none;
+    margin-top: 4rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: inherit;
+    border: .15rem solid var(--white);
+    color: var(--white);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.sedan-btn {
+    color: var(--Bright-orange);
+}
+
+.suv-btn {
+    color: var(--Dark-cyan);
+}
+
+.luxury-btn {
+    color: var(--Very-dark-cyan);
+}
+
+
+/*~~~~~~~~~~~~~~~*/
+
+.title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.info {
+    color: var(--white);
+    line-height: 1.8;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 98%;
+    transform: translate(-50%, -50%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        overflow-y: scroll;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .container {
+        margin: 25% 10%;
+    }
+    .attribution {
+        display: none;
+    }
+}
