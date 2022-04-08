@@ -59,6 +59,7 @@ img {
 
 .card {
     padding: 2.5rem;
+    max-width: 18rem;
 }
 
 
@@ -110,7 +111,7 @@ img {
     line-height: 1.8;
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 700px) {
+@media only screen and (min-width: 700px) {
     .container {
         margin: 0 auto;
     }
