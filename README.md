@@ -72,7 +72,7 @@ Get more comfortable using rem instead of pixels.
 
 ### Useful resources
 
-- [Example resource 1](https://www.youtube.com/watch?v=5DAvEEKfTEE&ab_channel=MrCoder) - This helped me with figuring out how to get the border radius to appear. And with deciding to use grid instead of flexbox for the layout.
+- [1](https://www.youtube.com/watch?v=5DAvEEKfTEE&ab_channel=MrCoder) - This helped me with figuring out how to get the border radius to appear. And with deciding to use grid instead of flexbox for the layout.
 
 ## Author
 
